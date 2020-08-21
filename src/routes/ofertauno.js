@@ -1,5 +1,9 @@
+
 const express = require('express');
 const router = express.Router();
+
+// Stripe
+//const stripe = require('stripe')('sk_test_rCp23dn4fDasEqfGiVkhHvii00SyEkd4GS');
 
 
 // Models
@@ -14,7 +18,7 @@ const { isAuthenticated } = require('../helpers/auth');
 
 
 router.post('/ofertauno/new-ofertauno',  async (req, res) => {
-  const { name, title, image, imagedos, imagetres, description, price } = req.body;
+  const { name, title, image, imagedos, imagetres, description, oldprice, price, filtroprice, color, colorstock } = req.body;
   const errors = [];
   if (!image) {
     errors.push({text: 'Please Write a Title.'});
@@ -33,7 +37,7 @@ router.post('/ofertauno/new-ofertauno',  async (req, res) => {
       price
     });
   } else {
-    const newNote = new Ofertauno({ name, title, image, imagedos, imagetres, description, price });
+    const newNote = new Ofertauno({ name, title, image, imagedos, imagetres, description, oldprice, price, filtroprice, color, colorstock });
     //newNote.user = req.user.id;
     await newNote.save();
     req.flash('success_msg', 'Note Added Successfully');
@@ -66,7 +70,11 @@ router.get('/ofertauno/add',  async (req, res) => {
 });
 
 
-
+router.get('/ofertaunobackend/:id', async (req, res) => {
+  const { id } = req.params;
+  const ofertauno = await Ofertauno.findById(id);
+   res.render('ofertauno/ofertaunobackredirect', {ofertauno});
+});
 
 
 
@@ -127,6 +135,7 @@ router.get('/addtocardofertauno/:id', function(req, res, next){
     cart.add(product, product.id);
     req.session.cart = cart;
     console.log(req.session.cart);
+    req.flash('carro', 'Producto agregado al carro exitosamente');
     res.redirect('/shopcart');
 
   });

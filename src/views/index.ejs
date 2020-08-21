@@ -6,7 +6,7 @@
 			
 		<div class="header_caption">
 			<div class="animated_caption">
-			<h1>Pink Shoes <br>	2013 Collection</h1>
+			<h1>Pink Shoes <br>	Colección 2020</h1>
 			<p>Nunc non fermentum nunc. Sed ut ante eget leo tempor <br>consequat sit amet eu orci. Donec dignissim <br>dolor eget..</p>
 			<ul class="caption_button">
 				<li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
@@ -25,7 +25,7 @@
 	<div class="container">
 		<div class="header_caption">
 			<div class="animated_caption">
-			<h1>Pink Shoes <br>	2013 Collection</h1>
+			<h1>Pink Shoes <br>Colección 2020</h1>
 			<p>Nunc non fermentum nunc. Sed ut ante eget leo tempor <br>consequat sit amet eu orci. Donec dignissim <br>dolor eget..</p>
 			<ul class="caption_button">
 				<li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
@@ -145,8 +145,10 @@
 		<h2>PRODUCT</h2>
 		<ul class="prouct_caption portfoliomenu">
 			<li><a href="JavaScript:Void(0);" data-filter="*">ALL</a></li>
-			<li><a href="JavaScript:Void(0);" data-filter=".new">NEW ARRIVALS</a></li>
-			<li><a href="JavaScript:Void(0);" data-filter=".best">BEST SELLER</a></li>
+			<li><a href="JavaScript:Void(0);" data-filter=".new">DESTACADOS</a></li>
+			<li><a href="JavaScript:Void(0);" data-filter=".best">MAS VENDIDAS</a></li>
+			<li><a href="JavaScript:Void(0);" data-filter=".bestt">OFERTAS</a></li>
+
 		</ul>
 	</div>
 </div>
@@ -154,17 +156,39 @@
 		<div class="cl-xl-12 d-flex col-lg-12 col-md-12 col-sm-12">
 			<div class="container">
 				<div class="row portfolio-team">
+
+						<% ofertauno.forEach(function (ofertaun) { %>
+							<div class="col-xl-3 text-center col-lg-3 col-md-3 col-sm-6 bestt portfolio-item ">
+								<div class="img_box_1">
+									<a href="/ofertaunoredirect/<%= ofertaun.id %>"><div class="overlay"></div></a>
+									<img src="<%= ofertaun.image %>" alt="">
+									<div class="p_icon">
+										<ul>
+											<li><a href="/ofertaunoredirect/<%= ofertaun.id %>"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+											<li><a href="/addtocardofertauno/<%= ofertaun.id %>"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<p class="c_p_text">
+									<span><%= ofertaun.title %></span>
+										<br>
+										<button>$<%= ofertaun.price %></button>
+								</p>
+							</div>
+							<% }) %>
+		
 			
 
 					<% ofertados.forEach(function (ofertado) { %>
 					<div class="col-xl-3 text-center col-lg-3 col-md-3 col-sm-6 portfolio-item new">
 						<div class="img_box_1">
-							<a href="product_detail.html"><div class="overlay"></div></a>
+							<a href="/ofertadosredirect/<%= ofertado.id %>"><div class="overlay"></div></a>
 							<img src="<%= ofertado.image %>" alt="">
 							<div class="p_icon">
 								<ul>
-									<li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+									<li><a href="/ofertadosredirect/<%= ofertado.id %>"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
 									<li><a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
 									<li><a href="product_detail.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
 								</ul>
@@ -190,7 +214,7 @@
 									<li><a href="/ofertatresredirect/<%= ofertatre.id %>"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
 									<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
 									<li><a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
-									<li><a href="product_detail.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+									<li><a href="/addtocardofertatres/<%= ofertatre.id %>"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
 								</ul>
 							</div>
 						</div>

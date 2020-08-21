@@ -1,19 +1,5 @@
 <% include ../partials/_header %>
 
-<!--____________________banner______________________________-->
-
-<div class="col-xl-12">
-    <div class="p_banner">
-        
-    </div>
-</div>
-
-
-
-<!--____________________banner______________________________-->
-<!--__________________________product______________________________-->
-
-
 <div class="product_page">
     <div class="container">
         <div class="row">
@@ -36,10 +22,10 @@
                     <div class="quantity">
                         <input class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1"
                      type="number">
-                        <button>AGREGAR AL CARRO</button>
+                     <a href="/addtocardofertatres/<%= ofertatres.id %>">  <button>AGREGAR AL CARRO</button></a>
                     </div>
                     <ul class="button_box">
-                        <li><a href="#">Add To Wishlist</a></li>
+                        <li><a href="/ofertatres/tallecolor/<%= ofertatres.id %>">Elegir talle y color</a></li>
                         <li><a href="#">Add To Compare</a></li>
                     </ul>
                     <div class="product_meta">
@@ -72,16 +58,6 @@
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-<!--__________________________product______________________________-->
-
-
 
 <% include ../partials/_footer %>
 

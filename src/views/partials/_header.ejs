@@ -15,10 +15,7 @@
 
 </head>
 <body>
-	<div id="overlayer"></div>
-	<div class="loader">
-	  <img src="img/loader_img.gif" alt="">
-	</div>
+	
 	
 	<!--____________________header______________________________-->
 	
@@ -33,7 +30,7 @@
 						<div class="col-xl-4 offset-xl-5 text-right col-lg-6 col-md-6 offset-md-3 offset-sm-2 col-sm-8">
 							<ul class="right_caption">
 								<li><a href="#" class="hover_search"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <% if(session.cart) { %><%= session.cart.totalQty%></a></li>
+								<li><a href="/shopcart/"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <% if(session.cart) { %><%= session.cart.totalQty%></a></li>
 									<% } %>
 
 								<li><a href="#">Login or register</a></li>

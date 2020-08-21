@@ -99,7 +99,7 @@ router.post('/ofertatres/tallecolor/:id',  async (req, res) => {
 //editar
 router.get('/ofertatres/edit/:id',  async (req, res) => {
   const ofertatres = await Ofertatres.findById(req.params.id);
-  res.render('ofertados/edit-ofertados', { ofertados });
+  res.render('ofertatres/edit-ofertatres', { ofertatres });
 });
 
 router.post('/ofertatres/edit/:id',  async (req, res) => {
