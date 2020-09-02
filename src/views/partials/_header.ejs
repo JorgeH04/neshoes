@@ -29,8 +29,8 @@
 						</div>
 						<div class="col-xl-4 offset-xl-5 text-right col-lg-6 col-md-6 offset-md-3 offset-sm-2 col-sm-8">
 							<ul class="right_caption">
-								<li><a href="#" class="hover_search"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-								<li><a href="/shopcart/"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <% if(session.cart) { %><%= session.cart.totalQty%></a></li>
+								<li></li>
+								<li> <% if(session.cart) { %><%= session.cart.totalQty%></a></li>
 									<% } %>
 
 								<li><a href="#">Login or register</a></li>
@@ -57,13 +57,12 @@
 						<li><a href="/about">About</a></li>
 						<% if(user) { %>
 						<li><a href="/perfil">Perfil</a></li>
- 						<li><a href="/logout">Logout</a></li>
+ 						<li><a href="/users/logout">Logout</a></li>
 						<% } else { %>    
 						<li><a href="/users/signin">Login</a></li>
 						<li><a href="/users/signup">Registrarse</a></li>
 						<li><a href="/contacto">Contact</a></li>	
-						<li><a href="/shopcart/"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <% if(session.cart) { %><%= session.cart.totalQty%></a></li>
-							<% } %>
+						<li><a href="/shopcart/"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <% if(session.cart) { %><%= session.cart.totalQty%>		<% } %>	</a></li>
 						<% } %>
 
 
