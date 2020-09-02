@@ -62,7 +62,8 @@
 						<li><a href="/users/signin">Login</a></li>
 						<li><a href="/users/signup">Registrarse</a></li>
 						<li><a href="/contacto">Contact</a></li>	
-							
+						<li><a href="/shopcart/"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <% if(session.cart) { %><%= session.cart.totalQty%></a></li>
+							<% } %>
 						<% } %>
 
 
