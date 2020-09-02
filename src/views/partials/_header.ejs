@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Neshoes</title>
+	<title>Licursi Shoes</title>
 	<link rel="icon" href="/img/logo.png">
 	<link rel="stylesheet" href="/css/styles.css">
 	<meta name="viewport" content="width=device-width,intial-scale=1.0">
@@ -25,7 +25,7 @@
 				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
 					<div class="row">
 						<div class="col-xl-3 col-lg-3 col-md-3 col-sm-2">
-							<p class="logo"><a href="/">Shoeniverse</a></p>
+							<p class="logo"><a href="/">Licursi Shoes</a></p>
 						</div>
 						<div class="col-xl-4 offset-xl-5 text-right col-lg-6 col-md-6 offset-md-3 offset-sm-2 col-sm-8">
 							<ul class="right_caption">
@@ -55,14 +55,16 @@
 						<li><a href="/" class="menu_active">Home</a></li>
 						<li><a href="/produnoindex/1">Products</a></li>
 						<li><a href="/about">About</a></li>
+						<li><a href="/contacto">Contact</a></li>	
+
 						<% if(user) { %>
-						<li><a href="/perfil">Perfil</a></li>
- 						<li><a href="/users/logout">Logout</a></li>
+						<li><a href="/perfil/1">Perfil</a></li>
+						 <li><a href="/users/logout">Logout</a></li>
+						 <li><a href="/shopcart/"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <% if(session.cart) { %><%= session.cart.totalQty%>		<% } %>	</a></li>
+
 						<% } else { %>    
 						<li><a href="/users/signin">Login</a></li>
 						<li><a href="/users/signup">Registrarse</a></li>
-						<li><a href="/contacto">Contact</a></li>	
-						<li><a href="/shopcart/"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <% if(session.cart) { %><%= session.cart.totalQty%>		<% } %>	</a></li>
 						<% } %>
 
 
