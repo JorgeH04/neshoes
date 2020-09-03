@@ -1,213 +1,168 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
 <head>
-	<meta charset="UTF-8">
-	<title>Neshoes</title>
-	<link rel="icon" href="/img/logo.png">
-	<link rel="stylesheet" href="/css/styles.css">
-	<meta name="viewport" content="width=device-width,intial-scale=1.0">
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="/css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="/css/animate.css">
-	<link rel="stylesheet" href="/css/set1.css">
-
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Shoping Cart</title>
+    <link rel='stylesheet' href='/asset/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='/asset/css/owl.carousel.min.css'>
+    <link rel='stylesheet' href='/asset/css/animated.css'>
+    <link rel='stylesheet' href='/asset/css/font-awesome.css'>
+    <link rel='stylesheet' href='/asset/css/ui.css'>
+    <link rel='stylesheet' href='/asset/css/jquery.mmenu.all.css'>
+    <link rel='stylesheet' href='/asset/css/flaticon.css'>
+    <link rel='stylesheet' href='/asset/css/style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i;Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 </head>
-<body>
+<body class="shoping-cart">
+
+    <header class="header header-style2">
+        
+       
+        <div class="menu-primary">
+            <div class="container">
+                <a href="#categories-menu" class="menu-button categories-menu-button">
+                    Categories<span class="flaticon-bars"></span>
+                </a>
+                <nav class="menu-item has-mega-menu" id="categories-menu">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#">Categories</a>
+                            <span class="click-categories flaticon-bars"></span>
+                            <div class="category-drop-list">
+                                <div class="category-drop-list-inner">
+                                    <ul class="sub-menu sub-menu-open">
+                                        <li class="menu-item"><a href="#">Electronics</a></li>
+                                        <li class="menu-item"><a href="#">Smartphone & Table</a></li>
+                                        <li class="menu-item"><a href="#">Television</a></li>
+                                        <li class="menu-item"><a href="#">Shoes & Accessories</a></li>
+                                        <li class="menu-item"><a href="#">Camera & Photo</a></li>
+                                        <li class="menu-item"><a href="#">Watch & Jewellry</a></li>
+                                        <li class="menu-item"><a href="#">Accessories</a></li>
+                                        <li class="menu-item"><a href="#">Sport & Outdoors</a></li>
+                                        <li class="menu-item"><a href="#">Computer & Networking </a></li>
+                                        <li class="menu-item"><a href="#">Flashlights & Lamps</a></li>
+                                        <li class="menu-item"><a href="#">Fashion & Accecssories</a></li>
+                                        <li class="menu-item"><a href="#">Watch & Shoes</a></li>
+                                        <li class="menu-item"><a href="#">Flashlights & Lamps</a></li>
+                                        <li class="menu-item"><a href="#">Fashion & Accecssories</a></li>
+                                        <li class="menu-item"><a href="#">Watch & Shoes</a></li>
+                                    </ul>
+                                    <span class="more-categories open-cate">More Categories</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#primary-navigation" class="menu-button primary-navigation-button">
+                    <span class="flaticon-bars"></span>Main Menu
+                </a>
+                <nav id="primary-navigation" class="site-navigation main-menu menu-home1">
+                    <ul id="primary-menu" class="menu">
+                        <li class="menu-item has-childrent">
+                            <a href="">Home</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="index.html">Home 1</a></li>
+                                <li class="menu-item"><a href="home-v2.html">Home 2</a></li>
+                                <li class="menu-item"><a href="home-v3.html">Home 3</a></li>
+                                <li class="menu-item"><a href="home-v4.html">Home 4</a></li>
+                                <li class="menu-item"><a href="home-v5.html">Home 5</a></li>
+                                <li class="menu-item"><a href="home-v6.html">Home 6</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">New Arrival</a></li>
+                        <li class="menu-item"><a href="#">Deals</a></li>
+                        <li class="menu-item has-childrent">
+                            <a href="#">Shop</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="categories-grid.html">Categories Grid 1</a></li>
+                                <li class="menu-item"><a href="category-grid-right-sidebar.html">Categories Grid 1 Right Sidebar</a></li>
+                                <li class="menu-item"><a href="categories-grid2.html">Categories Grid 2</a></li>
+                                <li class="menu-item"><a href="categories-grid2-right-sidebar.html">Categories Grid 2 Right Sidebar</a></li>
+                                <li class="menu-item"><a href="categories-grid3.html">Categories Grid 3</a></li>
+                                <li class="menu-item"><a href="categories-list1.html">Categories List 1</a></li>
+                                <li class="menu-item"><a href="categories-list1-right-sidebar.html">Categories List 1 Right Sidebar</a></li>
+                                <li class="menu-item"><a href="categories-list2.html">Categories List 2</a></li>
+                                <li class="menu-item"><a href="categories-list2-right-sidebar.html">Categories List 2 Right Sidebar</a></li>
+                            </ul>
+                        </li>
 
 
-  <!--____________________header______________________________-->
-	
-
-  <div class="main_1 wow fadeInDown"  data-wow-delay=".8s">
-			<div class="container">
-				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-					<div class="row">
-						<div class="col-xl-3 col-lg-3 col-md-3 col-sm-2">
-							<p class="logo"><a href="/">Shoeniverse</a></p>
-						</div>
-						<div class="col-xl-4 offset-xl-5 text-right col-lg-6 col-md-6 offset-md-3 offset-sm-2 col-sm-8">
-							<ul class="right_caption">
-								<li><a href="#" class="hover_search"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-								<li><a href="/shopcart/"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <% if(session.cart) { %><%= session.cart.totalQty%></a></li>
-									<% } %>
-
-								<li><a href="#">Login or register</a></li>
-							</ul>
-							<div class="search-box">
-    								<input type="text" placeholder=""/>
-    								<input type="button" value="Search"/>
-  								</div>
-						</div>
-					</div>
-				</div>
-			</div>			
-		</div>
-		<div class="n_top_nav">
-	
-				
-      	
-		</div>
-	
-
-<section class="totals py-5">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col text-center text-uppercase">
-              <div class="row">
-                <!-- single column -->
-                <div class="col-10 mx-auto col-md-2">
-                  <p class="text-uppercase">products</p>
-                </div>
-                <!-- end of  single column -->
-                <!-- single column -->
-                <div class="col-10 mx-auto col-md-4">
-                  <p class="text-uppercase">name of products</p>
-                </div>
-                <!-- end of  single column -->
-                <!-- single column -->
-                <div class="col-10 mx-auto col-md-2">
-                  <p class="text-uppercase">price</p>
-                </div>
-                <!-- end of  single column -->
-                <!-- single column -->
-                <div class="col-10 mx-auto col-md-2">
-                  <p class="text-uppercase">quantity</p>
-                </div>
-                <!-- end of  single column -->
-                <!-- single column -->
-                <div class="col-10 mx-auto col-md-2">
-                  <p class="text-uppercase">eliminar</p>
-                </div>
-                <!-- end of  single column -->
-              </div>
-              <!-- end of column -->
-              <hr />
-    
-    
-              <% if(products) { %>
-                <% for(var i = 0; i < products.length; i++) { %>
-              <!-- single product -->
-              <div class="row my-3 align-items-center">
-                <!-- single column -->
-                <div class="col-10 mx-auto col-md-2">
-                  <img
-                    src="<%= products[i].item.image %>"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <!-- end of single column -->
-                <!-- single column -->
-                <div class="col-10 mx-auto col-md-4">
-                  <p> <%= products[i].item.title %> </p>
-                </div>
-                <!-- end of single column -->
-                <!-- single column -->
-                <div class="col-10 mx-auto col-md-2"><p>$<%= products[i].price %></p></div>
-                <!-- end of single column -->
-                <!-- single column -->
-                <div class="col-10 mx-auto col-md-2">
-                  <!-- cart buttons -->
-                  <div class="d-flex justify-content-center align-items-center">
-                    <a href="/reduce/<%= products[i].item._id %>" class="btn btn-black mx-1">-</a>
-                    <span class="btn btn-black mx-1"> <%= products[i].qty %> </span>
-                    <a href="/sumar/<%= products[i].item._id %>" class="btn btn-black mx-1">+</a>
-                  </div>
-                  <!-- end cart buttons -->
-                </div>
-                <!-- end of single column -->
-                <!-- single column -->
-                <div class="col-10 mx-auto col-md-2">
-                        <a href="/remove/<%= products[i].item._id %>" class="btn btn-danger">Eliminar</a>
-
-                </div>
-
-                <!-- end of single column -->
-              </div>
-              <!-- end of single product -->
-              <% } %>            
-    
-            </tbody>
-            <tfoot>
-            <tr>
-                <th colspan="3" class="text-right">Total</th>
-                <th><%= totalPrice %></th>
-                <th></th>
-            </tr>
-            </tfoot>
-        </table>
-    
-    </div>
-    <div class="col-12 text-right">
-        <a href="/" class="btn btn-outline-secondary mr-3" type="submit">Seguir Comprando</a>
-        <a href="" class="btn btn-outline-success">Checkout</a>
-    </div>
-    </form>
-    </div>
-    </div>
-    </div>
-    
-    <% } else { %>                    
-    
-    <div class="row">
-    <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
-    <h2>no items</h2>
-    </div>
-    </div>
-    
-    <% } %>
-    
-    
-    
-              <div class="row">
-                <div
-                  class="col col-sm-6 mx-auto d-flex justify-content-center flex-wrap"
-                >
-                  <button type="button" class="btn btn-black my-2">
-                    continue shopping
-                  </button>
-                  <button type="button" class="btn btn-yellow my-2 ml-2">
-                    checkout
-                  </button>
-                </div>
-              </div>
-              <!-- end o cart buttons -->
-              <div class="row">
-                <div class="col mx-auto my-3 col-sm-8 col-md-6 col-lg-4">
-                  <div class="card card-body bg-secondary text-uppercase">
-                    <div class="card-title text-white"><h6>cart total</h6></div>
-                    <div class="row">
-                      <!-- single row -->
-                      <div class="col-6">sub totoal</div>
-                      <div class="col-6">$900.00</div>
-                      <!-- end of single row -->
-                      <!-- single row -->
-                      <div class="col-6">tax</div>
-                      <div class="col-6">$123.00</div>
-                      <!-- end of single row -->
-                      <!-- single row -->
-                      <div class="col-6">shipping</div>
-                      <div class="col-6">$66.00</div>
-                      <!-- end of single row -->
-                      <!-- single row -->
-                      <div class="col-6 my-3">order total</div>
-                      <div class="col-6 my-3 text-danger">$10.0000</div>
-                      <!-- end of single row -->
-                    </div>
-                  </div>
-                </div>
-              </div>
+                        <li class="menu-item has-childrent active">
+                            <a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="blogpost.html">Blog Post</a></li>
+                                <li class="menu-item"><a href="product-detail.html">Product Detail</a></li>
+                                <li class="menu-item active"><a href="shopping-carrt.html">Cart</a></li>
+                                <li class="menu-item"><a href="checkout.html">Check Out</a></li>
+                                <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+                                <li class="menu-item"><a href="about.html">About US</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
             </div>
-          </div>
         </div>
-      </section>
-      <!-- end of  totals -->
+    </header>
+   
 
 
+    <!-- End .banner -->
+    <div class="main-content container">
+        <h4 class="title-page">Shoping Cart</h4>
+        <div class="shop-table-content container">
+            <form method="post" action="#" class="shoping-form">
+                <a class="button button-check-out" href="#">Proceed  to  Checkout</a>
+                <div class="div-table-cart">
+                    <table class="shop_table cart">
+                        <thead>
+                            <tr>
+                                <th class="product-thumbnail">&nbsp;</th>
+                                <th class="product-name">Product Name</th>
+                                <th class="product-edit">&nbsp;</th>
+                                <th class="product-price">Unit Price</th>
+                                <th class="product-quantity">Qty</th>
+                                <th class="product-subtotal">Subtotal</th>
+                                <th class="product-remove">&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="cart_item">
+                                <td class="product-thumbnail" data-title="">
+                                    <a href="#"><img height="150" width="185" alt="s_c" class="attachment-shop_thumbnail wp-post-image" src="assets/images/s_c.jpg"></a>
+                                </td>
+                                <td class="product-name" data-title="Product Name">
+                                    <a href="#">Fukasawa's Twelve watch</a>
+                                </td>
+                                <td class="edit"><a href="#">Edit</a></td>
+                                <td class="product-price" data-title="Unit Price">
+                                    <span class="amount">$168.00</span>
+                                </td>
+                                <td class="product-quantity" data-title="Qty">
+                                    <div class="quantity buttons_added">
+                                        <input type="text" class="input-text qty text" title="Qty" value="1" name="qty">
+                                    </div>
+                                </td>
+                                <td class="product-subtotal" data-title="Subtotal">
+                                    <span class="amount">$168.00</span>
+                                </td>
+                                <td class="product-remove" data-title="Remove">
+                                    <a title="Remove this item" class="remove" href="#">×</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="button-cart">
+                        <a class="button button-check-out" href="#">Clear Shoping Cart</a>
+                        <a class="button button-check-out" href="#">Update Shoping Cart</a>
+                        <a class="button button-check-out" href="#">Continue Shoping</a>
+                    </div>
+                </div>
 
+            </form>
+           
+        </div>
+        <% include ../partials/_footer %>      
 
-
-<% include ../partials/_footer %>      
+            
